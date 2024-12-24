@@ -1,0 +1,202 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall background */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #ab8080;
+    color: #333;
+  }
+  
+  /* Container for all sections */
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #486884;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    animation: gradientAnimation 3s ease infinite; /* Animation for the gradient */
+  }
+  
+  
+  header h1:hover {
+    transform: scale(1.1); /* Slightly increases size on hover */
+  }
+  
+  
+  header p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Intro Section */
+  #intro {
+    padding: 50px 20px; /* Added padding */
+    margin-bottom: 40px; /* Added margin for spacing below */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #intro .intro-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-right: 30px;
+    border: 5px solid #f0a500;
+  }
+  
+  .profile-picture:hover{
+    transform: scale(1.1);
+  }
+
+  .intro-text {
+    max-width: 600px;
+  }
+  
+  .intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f0a500;
+  }
+  
+  .intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px; /* Added padding */
+    margin-bottom: 40px; /* Added margin for spacing below */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #contact h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #e18a00;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #486884;
+    color: white;
+    padding: 20px 20px; /* Added padding */
+    text-align: center;
+    margin-top: 50px; /* Added margin for spacing above */
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .contact-details strong {
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    #intro {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  
+    .intro-content {
+      flex-direction: column;
+    }
+  
+    #contact {
+      padding: 30px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .intro-text h2 {
+      font-size: 2rem;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 1rem;
+    }
+  }
+  
